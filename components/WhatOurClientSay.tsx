@@ -123,7 +123,7 @@ const WhatOurClientSay: React.FC = () => {
 
             <div className="">
               <p className="text-lg md:text-xl sm:text-xs text-[#1A1A1A] break-words text-ellipsis whitespace-normal">
-                "{content.description}"
+                {content.description}
               </p>
             </div>
           </div>

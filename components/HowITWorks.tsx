@@ -55,7 +55,7 @@ const HowITWorks: React.FC = () => {
             </h3>
 
             <p className="text-md md:text-lg lg:text-xl text-[#1A1A1A] mb-10 text-center">
-              "{content.description}"
+              {content.description}
             </p>
           </div>
         ))}
