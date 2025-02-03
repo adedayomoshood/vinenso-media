@@ -167,7 +167,6 @@ export default function WhatWeDo() {
           See What <span className="text-primary"> We Can Do</span>
         </h1>
 
-        {/* Dynamically rendering multiple ScrollableContent */}
         {dataArrays.map((data, index) => (
           <ScrollableContent
             key={index}

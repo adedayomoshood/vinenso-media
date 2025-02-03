@@ -42,3 +42,12 @@ body {
 .scroll-btn:hover {
   background: #777;
 }
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

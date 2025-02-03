@@ -5,14 +5,13 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 const plans = [
   {
-    title: "Starter Plan",
-    price: "$50/month",
-    titleColor: "text-[#34CB00]",
-    bgColor: "bg-[#71FF3F33]",
+    title: "Growth Plan",
+    price: "$99/month",
+    titleColor: "text-[#17AEAE]",
+    bgColor: "bg-[#3FFFFF1A]",
     features: [
-      { text: "4 Image Posts", image: "/ai-image.png" },
-      { text: "2 Short Form Videos", image: "/ai-video.png" },
-      { text: "1 Platform Managed", image: "/browser.png" },
+      { text: "4 Professional Videos", image: "/ai-videoV.png" },
+      { text: "2 Platform Managed", image: "/ai-videoV.png" },
       {
         text: "Branded Posts, Captions & Hashtags",
         image: "/chart-relationship.png",
@@ -23,40 +22,17 @@ const plans = [
       { text: "Support When You Need It", image: "/security-check.png" },
       { text: "Monthly Analytics Reports", image: "/analytics-up.png" },
     ],
-    featureColors: ["text-green-500", "text-green-500", "text-green-500"],
+    featureColors: ["text-blue-900", "text-blue-900"],
     cardColor: "bg-gray-100",
   },
   {
-    title: "Growth Plan",
-    price: "$100/month",
-    titleColor: "text-[#22BABA]",
-    bgColor: "bg-[#3FFFFF1A]",
-    features: [
-      { text: "10 Image Posts", image: "/ai-imageG.png" },
-      { text: "4 Short Form Videos", image: "/ai-videoG.png" },
-      { text: "2 Platform Managed", image: "/browserG.png" },
-      {
-        text: "Branded Posts, Captions & Hashtags",
-        image: "/chart-relationship.png",
-      },
-      { text: "Review Your Content", image: "/setting-done-03.png" },
-      { text: "Scheduling & Posting", image: "/clock-03.png" },
-      { text: "Dedicated Social Media Manager", image: "/user-shield-01.png" },
-      { text: "Support When You Need It", image: "/security-check.png" },
-      { text: "Monthly Analytics Reports", image: "/analytics-up.png" },
-    ],
-    featureColors: ["text-[#17AEAE]", "text-[#17AEAE]", "text-[#17AEAE]"],
-    cardColor: "bg-gray-200",
-  },
-  {
     title: "Advanced Plan",
-    price: "$200/month",
+    price: "$198/month",
     titleColor: "text-[#DE7800]",
     bgColor: "bg-[#FFC90A33]",
     features: [
-      { text: "20 Image Posts", image: "/ai-imageA.png" },
-      { text: "3 Short Form Videos", image: "/ai-videoA.png" },
-      { text: "3 Platform Managed", image: "/browserA.png" },
+      { text: "8 Professional Videos", image: "/ai-videoVA.png" },
+      { text: "3 Platform Managed", image: "/browserVA.png" },
       {
         text: "Branded Posts, Captions & Hashtags",
         image: "/chart-relationship.png",
@@ -67,18 +43,31 @@ const plans = [
       { text: "Support When You Need It", image: "/security-check.png" },
       { text: "Monthly Analytics Reports", image: "/analytics-up.png" },
     ],
-    featureColors: ["text-[#DE7800]", "text-[#DE7800]", "text-[#DE7800]"],
+    featureColors: ["text-[#DE7800]", "text-[#DE7800]"],
+    cardColor: "bg-gray-200",
+  },
+  {
+    title: "Max Plan",
+    price: "$297/month",
+    titleColor: "text-[#FF4646]",
+    bgColor: "bg-[#FF464633]",
+    features: [
+      { text: "16 Professional Videos", image: "/ai-videoVM.png" },
+      { text: "4 Platform Managed", image: "/browserVm.png" },
+      {
+        text: "Branded Posts, Captions & Hashtags",
+        image: "/chart-relationship.png",
+      },
+      { text: "Review Your Content", image: "/setting-done-03.png" },
+      { text: "Scheduling & Posting", image: "/clock-03.png" },
+      { text: "Dedicated Social Media Manager", image: "/user-shield-01.png" },
+      { text: "Support When You Need It", image: "/security-check.png" },
+      { text: "Monthly Analytics Reports", image: "/analytics-up.png" },
+    ],
+    featureColors: ["text-[#FE0F0F]", "text-[#FE0F0F]"],
     cardColor: "bg-gray-300",
   },
 ];
-
-const Header = () => (
-  <div className="text-center my-8">
-    <h1 className="text-primary-white text-4xl sm:text-5xl font-bold">
-      Plans That Grow With <span className="text-blue-800">You</span>
-    </h1>
-  </div>
-);
 
 const ScrollButton = ({ direction }: { direction: "left" | "right" }) => {
   const Icon = direction === "left" ? FaArrowCircleLeft : FaArrowCircleRight;
@@ -132,7 +121,7 @@ const PlanTitle = ({
     >
       {price}
     </h3>
-    <p className="text-center text-xl font-bold my-3">{title}</p>
+    <p className="text-center text-xl font-bold my-3 mb-8">{title}</p>
   </div>
 );
 
@@ -176,14 +165,11 @@ const PlanActions = () => (
   </div>
 );
 
-export default function Plans() {
+export default function VideoPlans() {
   return (
     <section className="w-[90%] max-w-6xl mx-auto mb-20">
-      <Header />
       <div className="flex justify-between items-center">
-        <h3 className="text-[#333333] text-3xl font-bold mt-6 ml-5">
-          Social Media Management
-        </h3>
+        <h3 className="text-[#333333] text-4xl font-bold ml-5">Videos</h3>
         <div className="flex gap-3">
           <ScrollButton direction="left" />
           <ScrollButton direction="right" />

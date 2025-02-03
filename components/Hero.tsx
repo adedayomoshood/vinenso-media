@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-hero-gradient w-full h-[85vh] flex items-center justify-between">
-      <div className="grid grid-cols-2 mx-auto">
+    <section className="bg-hero-gradient w-full  h-[100vh] md:h-[85vh] flex items-center justify-between">
+      <div className="grid  md:grid-cols-2 mx-auto">
         <div className="px-6 max-w-screen-md py-10">
           <h1 className="text-2xl lg:text-5xl xl:text-6xl font-bold mb-4 text-black">
             Professional{" "}
@@ -24,7 +24,7 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-2 h-[32rem]">
+        <div className="grid grid-cols-2 grid-rows-2 gap-2 md:h-[32rem]">
           {" "}
           {/* First Image */}
           <div className="row-span-2 col-span-1">
