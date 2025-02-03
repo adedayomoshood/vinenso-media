@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 const HowITWorks: React.FC = () => {
@@ -13,11 +11,11 @@ const HowITWorks: React.FC = () => {
     {
       title: "Custom Image Posts and Short-Form Videos Made for Your Brand",
       description:
-        "Stand out with professional visuals and videos designed specifically for your business. Every piece of content reflects your brand’s unique style and messaging.!",
+        "Stand out with professional visuals and videos designed specifically for your business. Every piece of content reflects your brand&apos;s unique style and messaging.",
       Image: "/diamond-02.png",
     },
     {
-      title: "We Handle Posting and Engagement, So You Don’t Have To",
+      title: "We Handle Posting and Engagement, So You Don&apos;t Have To",
       description:
         "Stay consistent without the hassle. From posting to optimizing for engagement and growth, we take care of everything while you focus on running your business.",
       Image: "/rocket-01.png",
@@ -25,8 +23,6 @@ const HowITWorks: React.FC = () => {
   ];
 
   const contentHeading = "Here is What Our Clients Say About Us";
-
-  const cardWidth = 400;
 
   return (
     <div className="w-full flex flex-col items-center justify-center mx-auto my-16 px-4 md:px-8 lg:px-16">
@@ -48,7 +44,7 @@ const HowITWorks: React.FC = () => {
           >
             <Image
               src={content.Image}
-              width={60} // Adjusted image size for better responsiveness
+              width={60}
               height={60}
               alt="icons"
               className="mx-auto"

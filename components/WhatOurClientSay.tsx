@@ -30,7 +30,6 @@ const WhatOurClientSay: React.FC = () => {
         "50 Bucks Media transformed our online presence with vibrant content that truly speaks to our audience. Amazing results!",
     },
   ];
-
   const contentHeading = "Here is What Our Clients Say About Us";
 
   const scrollRef = useRef<HTMLDivElement>(null);
