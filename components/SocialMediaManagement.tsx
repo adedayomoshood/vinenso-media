@@ -13,14 +13,14 @@ const FeatureCard = ({
 }) => (
   <div className="flex flex-col items-center space-y-4 p-6">
     <div
-      className={`w-16 h-16 flex items-center justify-center rounded-full ${bgColor}`}
+      className={`w-16 transform transition-transform duration-300 ease-in-out hover:scale-110 h-16 flex items-center justify-center rounded-full ${bgColor}`}
     >
       <Image
         src={icon}
         alt={title}
         width={40}
         height={40}
-        className="object-contain"
+        className="object-contain "
       />
     </div>
     <div>
@@ -67,7 +67,7 @@ export default function SocialMediaManagement() {
       <h1 className="text-3xl font-bold mb-8 text-center">
         Social Media Management That Fits Your Budget
       </h1>
-      <article className="grid grid-cols-1 md:grid-cols-2  gap-6">
+      <article className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {features.map((feature, index) => (
           <FeatureCard
             key={index}

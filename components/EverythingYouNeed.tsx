@@ -51,7 +51,7 @@ const CardData = [
 export default function EverythingYouNeed() {
   return (
     <section className=" my-[4rem]">
-      <h1 className="text-center text-4xl md:text-5xl font-bold xl:w-2/5 lg:w-2/3 sm:w-2/3 w-[80%] m-auto 2xl:p-4">
+      <h1 className="text-center text-3xl md:text-5xl font-bold xl:w-2/5 lg:w-2/3 sm:w-2/3 w-[80%] m-auto 2xl:p-4">
         Everything You Need to
         <span className="text-primary-blue mb-[1rem]"> Succeed</span> Online
       </h1>
